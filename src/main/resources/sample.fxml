@@ -1,0 +1,18 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<GridPane fx:controller="tk.chaber.triangles_properties.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <TextField  id="value1"
+                GridPane.rowIndex="1"
+                GridPane.columnIndex="1"></TextField>
+    <TextField id="value2"
+               GridPane.rowIndex="2"
+               GridPane.columnIndex="1"></TextField>
+    <TextField id="value3"
+               GridPane.rowIndex="3"
+               GridPane.columnIndex="1"></TextField>
+</GridPane>
