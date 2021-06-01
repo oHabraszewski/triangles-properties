@@ -11,15 +11,14 @@ public class SectionTest extends TestCase {
     public void setUp(){
         section = new Section(new Point(0, 0), new Angle(60), 25);
     }
+
     @Test
     public void testXFromAngle() {
-
         assertEquals(12.5, section.getB().getX(), 0.00001);
     }
 
     @Test
     public void testYFromAngle() {
-
         assertEquals(12.5 * Math.sqrt(3), section.getB().getY(), 0.00001);
     }
 }
