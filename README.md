@@ -23,4 +23,6 @@ In this project I am using:
 
 - Java 8
 - JavaFX
+- JUnit 4
+- Maven
 - Git
