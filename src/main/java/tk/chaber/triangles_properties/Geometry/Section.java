@@ -3,6 +3,7 @@ package tk.chaber.triangles_properties.Geometry;
 public class Section {
     private Point   A,
                     B;
+    //private Straight straight;
 
     public Section(Point pointA, Point pointB){
         this.A = pointA;

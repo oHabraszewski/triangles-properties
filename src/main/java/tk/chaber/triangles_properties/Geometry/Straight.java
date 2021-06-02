@@ -9,16 +9,21 @@ public class Straight {
         this.intercept = b;
     }
 
-//    public Straight(Angle angle, double b){
-//        this.slope = m;
-//        this.intercept = b;
-//    }
+    public Straight(Point pointOnStraight, Angle angle){
+        double  x = pointOnStraight.getX(),
+                y = pointOnStraight.getY();
+
+        double  m = Math.tan(angle.getRadians()),
+                b = y - (x * m);
+        this.slope = m;
+        this.intercept = b;
+    }
 
     public double f(double x){
         return slope * x + intercept;
     }
 
-    public Point findCrossSection(Straight straight2){
+    public Point findIntersection(Straight straight2){
         double  m1 = this.getSlope(),
                 m2 = straight2.getSlope();
 
