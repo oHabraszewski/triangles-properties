@@ -1,8 +1,8 @@
 package tk.chaber.triangles_properties.Geometry;
 
 public class Point {
-    double  x,
-            y;
+    private double  x,
+                    y;
 
     public Point(double x, double y){
         this.x = x;

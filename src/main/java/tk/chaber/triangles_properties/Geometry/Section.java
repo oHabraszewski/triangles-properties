@@ -36,15 +36,7 @@ public class Section {
         return A;
     }
 
-    public void setA(Point a) {
-        A = a;
-    }
-
     public Point getB() {
         return B;
-    }
-
-    public void setB(Point b) {
-        B = b;
     }
 }
