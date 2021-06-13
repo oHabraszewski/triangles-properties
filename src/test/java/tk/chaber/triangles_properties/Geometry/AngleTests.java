@@ -1,23 +1,24 @@
 package tk.chaber.triangles_properties.Geometry;
 
-import junit.framework.TestCase;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class AngleTests extends TestCase {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class AngleTests{
     @Test
-    public void testGetRadiansFrom0() {
+    public void getRadiansFrom0() {
         Angle angle = new Angle(0);
         assertEquals(0, angle.getRadians(), 0.00001);
     }
 
     @Test
-    public void testGetRadiansFrom180() {
+    public void getRadiansFrom180() {
         Angle angle = new Angle(180);
         assertEquals(Math.PI, angle.getRadians(), 0.00001);
     }
 
     @Test
-    public void testGetRadiansFrom360() {
+    public void getRadiansFrom360() {
         Angle angle = new Angle(360);
         assertEquals(Math.PI * 2, angle.getRadians(), 0.00001);
     }

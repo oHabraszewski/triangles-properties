@@ -1,24 +1,24 @@
 package tk.chaber.triangles_properties.Geometry;
 
-import junit.framework.TestCase;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
-public class SectionTest extends TestCase {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class SectionTest{
     Section section;
-    @Before
-    public void setUp(){
+    @BeforeAll
+    public void init(){
         section = new Section(new Point(0, 0), new Angle(60), 25);
     }
 
     @Test
-    public void testXFromAngle() {
+    public void XFromAngle() {
         assertEquals(12.5, section.getB().getX(), 0.00001);
     }
 
     @Test
-    public void testYFromAngle() {
+    public void YFromAngle() {
         assertEquals(12.5 * Math.sqrt(3), section.getB().getY(), 0.00001);
     }
 }
