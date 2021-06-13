@@ -26,13 +26,6 @@ public class Section {
         this.B = pointB;
     }
 
-    public Section(int x1, int y1, int x2, int y2){
-        Point pointA = new Point(x1, y1);
-        Point pointB = new Point(x2, y2);
-        this.A = pointA;
-        this.B = pointB;
-    }
-
     public Point getA() {
         return A;
     }

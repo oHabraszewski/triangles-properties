@@ -35,6 +35,7 @@ public class StraightTests extends TestCase {
         assertEquals(2.0, straight.findIntersection(straight2).getY(), 0.00001);
     }
 
+
     public void testStraightFromAngle45AndPointX0Y10(){
         Straight straightFromAngle = new Straight(new Point(0,10), new Angle(45));
         assertEquals(1.0, straightFromAngle.getSlope(), 0.00001);
@@ -51,5 +52,17 @@ public class StraightTests extends TestCase {
         Straight straightFromAngle = new Straight(new Point(10,-20), new Angle(135));
         assertEquals(-1, straightFromAngle.getSlope(), 0.00001);
         assertEquals(-10, straightFromAngle.getIntercept(), 0.00001);
+    }
+
+    public void testStraightFromPointX10YMinus20AndPointX20Y20(){
+        Straight straightFromAngle = new Straight(new Point(10,-20), new Point(20, 20));
+        assertEquals(4, straightFromAngle.getSlope(), 0.00001);
+        assertEquals(-60, straightFromAngle.getIntercept(), 0.00001);
+    }
+
+    public void testStraightFromPointX0Y10AndPointX20Y20(){
+        Straight straightFromAngle = new Straight(new Point(0,10), new Point(20, 20));
+        assertEquals(0.5, straightFromAngle.getSlope(), 0.00001);
+        assertEquals(10, straightFromAngle.getIntercept(), 0.00001);
     }
 }

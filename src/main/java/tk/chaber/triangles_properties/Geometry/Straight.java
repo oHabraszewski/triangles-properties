@@ -19,6 +19,20 @@ public class Straight {
         this.intercept = b;
     }
 
+    public Straight(Point pointOnStraightA, Point pointOnStraightB){
+        double  x1 = pointOnStraightA.getX(),
+                y1 = pointOnStraightA.getY();
+
+        double  x2 = pointOnStraightB.getX(),
+                y2 = pointOnStraightB.getY();
+
+        double  m = (y2 - y1)/(x2 - x1),
+                b = y1 - (x1 * m);
+
+        this.slope = m;
+        this.intercept = b;
+    }
+
     public double f(double x){
         return slope * x + intercept;
     }
