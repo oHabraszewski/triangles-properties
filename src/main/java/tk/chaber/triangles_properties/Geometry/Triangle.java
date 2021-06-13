@@ -25,4 +25,16 @@ public class Triangle {
         this.b = b;
         this.c = c;
     }
+
+    public Section getA() {
+        return a;
+    }
+
+    public Section getB() {
+        return b;
+    }
+
+    public Section getC() {
+        return c;
+    }
 }
