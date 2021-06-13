@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StraightTests{
-    Straight straight;
+    static Straight straight;
 
     @BeforeAll
-    public void init() {
+    public static void init() {
         straight = new Straight(5, 10);
     }
 

@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SectionTest{
-    Section section;
+    static Section section;
     @BeforeAll
-    public void init(){
+    public static void init(){
         section = new Section(new Point(0, 0), new Angle(60), 25);
     }
 
