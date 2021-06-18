@@ -21,16 +21,16 @@ java -jar *filename*.jar
 
 Following mathematical stuff was used during development:
 
-- Radians as unit of measures for angles
+- **Radians as unit of measures for angles** [link](https://en.wikipedia.org/wiki/Radian)
   - Conversion from degrees to radians,
     - Using constant number PI,
-  - All trigonometry functions calculated from radians,
-- Trigonometry functions
+  - All trigonometric functions calculated from radians,
+- **Trigonometric functions** [link](https://en.wikipedia.org/wiki/Trigonometric_functions)
   - Sine and cosine for Section constructor based on Point, Angle and length of section,
   - Tangent for Straight constructor based on Point and Angle,
-- Pythagorean theorem
+- **Pythagorean theorem** [link](https://en.wikipedia.org/wiki/Pythagorean_theorem)
   - For lengths of Sections calculation in Triangle based on two Points,
-- Linear function
+- **Linear function** [link](https://en.wikipedia.org/wiki/Linear_function)
   - Used to find cross point between two Straights to create Triangle from side and two angles,
 
 ## Technology behind the project
