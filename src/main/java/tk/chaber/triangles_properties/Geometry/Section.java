@@ -45,5 +45,7 @@ public class Section {
         return B;
     }
 
-
+    public double getLength(){
+        return this.length;
+    }
 }

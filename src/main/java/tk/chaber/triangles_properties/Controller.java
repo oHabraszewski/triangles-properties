@@ -18,9 +18,14 @@ public class Controller {
                         input3;
 
     @FXML
-    private Text side1,
+    private Text    side1,
                     side2,
                     side3;
+
+    @FXML
+    private Text    angle1,
+                    angle2,
+                    angle3;
     @FXML
     public void createTriangle(ActionEvent event){
         double  value1 = Double.parseDouble(input1.getText()),
@@ -30,8 +35,15 @@ public class Controller {
         Section sideC = new Section(new Point(0, 0), new Angle(0), value1);
         Angle   alpha = new Angle(value2),
                 beta = new Angle(180 - value3);
-        Triangle triangle = new Triangle(sideC, alpha, beta);
-        System.out.println(triangle.toString());
 
+        Triangle triangle = new Triangle(sideC, alpha, beta);
+
+        side1.setText(String.valueOf(triangle.getA().getLength()));
+        side2.setText(String.valueOf(triangle.getB().getLength()));
+        side3.setText(String.valueOf(triangle.getC().getLength()));
+
+        angle1.setText(String.valueOf(value2));
+        angle2.setText(String.valueOf(value3));
+        angle3.setText(String.valueOf(180 - (value2 + value3)));
     }
 }

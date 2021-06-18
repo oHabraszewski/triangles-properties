@@ -54,9 +54,12 @@
             </Button>
         </GridPane>
         <VBox prefWidth="500">
-            <Label text="Side 1"></Label><Text fx:id="side1"></Text>
-            <Label text="Side 2"></Label><Text fx:id="side2"></Text>
-            <Label text="Side 3"></Label><Text fx:id="side3"></Text>
+            <Label text="Side A"></Label><Text fx:id="side1"></Text>
+            <Label text="Side B"></Label><Text fx:id="side2"></Text>
+            <Label text="Side C"></Label><Text fx:id="side3"></Text>
+            <Label text="Angle alpha"></Label><Text fx:id="angle1"></Text>
+            <Label text="Angle beta"></Label><Text fx:id="angle2"></Text>
+            <Label text="Angle gamma"></Label><Text fx:id="angle3"></Text>
         </VBox>
     </HBox>
 
