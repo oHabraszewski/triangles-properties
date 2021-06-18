@@ -5,6 +5,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 <GridPane fx:controller="tk.chaber.triangles_properties.Controller"
           xmlns:fx="http://javafx.com/fxml" alignment="center">
     <HBox spacing="8">
@@ -19,7 +20,7 @@
                         <Font size="14.0"/>
                     </font>
             </Label>
-            <TextField  id="value1"
+            <TextField  fx:id="input1"
                         GridPane.rowIndex="1"
                         GridPane.columnIndex="2"></TextField>
             <Label text="Angle 1"
@@ -30,7 +31,7 @@
                     <Font size="14.0"/>
                 </font>
             </Label>
-            <TextField id="value2"
+            <TextField fx:id="input2"
                        GridPane.rowIndex="2"
                        GridPane.columnIndex="2"></TextField>
             <Label text="Angle 2"
@@ -41,7 +42,7 @@
                     <Font size="14.0"/>
                 </font>
             </Label>
-            <TextField id="value3"
+            <TextField fx:id="input3"
                        GridPane.rowIndex="3"
                        GridPane.columnIndex="2"></TextField>
             <Button prefWidth="500"
@@ -53,9 +54,9 @@
             </Button>
         </GridPane>
         <VBox prefWidth="500">
-            <Label text="Hello"></Label>
-            <Label text="Hello"></Label>
-            <Label text="Hello"></Label>
+            <Label text="Side 1"></Label><Text fx:id="side1"></Text>
+            <Label text="Side 2"></Label><Text fx:id="side2"></Text>
+            <Label text="Side 3"></Label><Text fx:id="side3"></Text>
         </VBox>
     </HBox>
 
