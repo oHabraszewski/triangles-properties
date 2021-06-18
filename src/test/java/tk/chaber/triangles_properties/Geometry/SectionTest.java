@@ -21,4 +21,9 @@ public class SectionTest{
     public void YFromAngle() {
         assertEquals(12.5 * Math.sqrt(3), section.getB().getY(), 0.00001);
     }
+
+    @Test
+    public void getLength() {
+        assertEquals(25, section.calcLength(), 0.00001);
+    }
 }
