@@ -2,13 +2,13 @@ package tk.chaber.triangles_properties;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import tk.chaber.triangles_properties.Geometry.Angle;
 import tk.chaber.triangles_properties.Geometry.Point;
 import tk.chaber.triangles_properties.Geometry.Section;
 import tk.chaber.triangles_properties.Geometry.Triangle;
+import tk.chaber.triangles_properties.util.Value;
 
 
 public class Controller {
@@ -38,12 +38,12 @@ public class Controller {
 
         Triangle triangle = new Triangle(sideC, alpha, beta);
 
-        side1.setText(String.valueOf(triangle.getA().getLength()));
-        side2.setText(String.valueOf(triangle.getB().getLength()));
-        side3.setText(String.valueOf(triangle.getC().getLength()));
+        side1.setText(Value.simplify(triangle.getA().getLength()));
+        side2.setText(Value.simplify(triangle.getB().getLength()));
+        side3.setText(Value.simplify(triangle.getC().getLength()));
 
-        angle1.setText(String.valueOf(value2));
-        angle2.setText(String.valueOf(value3));
-        angle3.setText(String.valueOf(180 - (value2 + value3)));
+        angle1.setText(Value.simplify(value2));
+        angle2.setText(Value.simplify(value3));
+        angle3.setText(Value.simplify(180 - (value2 + value3)));
     }
 }
