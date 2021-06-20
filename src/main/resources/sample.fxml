@@ -60,6 +60,9 @@
             <Label text="Angle alpha"></Label><Text fx:id="angle1"></Text>
             <Label text="Angle beta"></Label><Text fx:id="angle2"></Text>
             <Label text="Angle gamma"></Label><Text fx:id="angle3"></Text>
+            <Label text="Type in terms of angles"></Label><Text fx:id="titoa"></Text>
+            <Label text="Type in terms of sides"></Label><Text fx:id="titos"></Text>
+
         </VBox>
     </HBox>
 
