@@ -11,7 +11,7 @@ public class Main extends javafx.application.Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/sample.fxml"));
         primaryStage.setTitle("Triangles properties");
-        primaryStage.setScene(new Scene(root, 400, 275));
+        primaryStage.setScene(new Scene(root, 400, 305));
         primaryStage.setResizable(false);
         primaryStage.show();
     }

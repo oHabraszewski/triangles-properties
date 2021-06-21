@@ -30,6 +30,9 @@ public class Controller {
     private Text    titos,
                     titoa;
     @FXML
+    private Text    height;
+
+    @FXML
     public void createTriangle(ActionEvent event){
         double  value1 = Double.parseDouble(input1.getText()),
                 value2 = Double.parseDouble(input2.getText()),
@@ -48,6 +51,8 @@ public class Controller {
         angle1.setText(Value.simplify(value2));
         angle2.setText(Value.simplify(value3));
         angle3.setText(Value.simplify(180 - (value2 + value3)));
+
+        height.setText(Value.simplify(triangle.getHeight()));
 
         titos.setText(triangle.getTitos());
         titoa.setText(triangle.getTitoa());
