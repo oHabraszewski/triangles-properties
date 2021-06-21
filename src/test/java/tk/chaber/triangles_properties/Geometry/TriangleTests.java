@@ -68,4 +68,10 @@ class TriangleTests {
 
         assertEquals("Acute", triangle.getTitoa());
     }
+
+    @Test
+    public void heightFromBase10InEquilateral(){
+        Triangle triangle = new Triangle(new Section(new Point(0,0), new Point(10, 0)), new Angle(60), new Angle(120));
+        assertEquals(Math.sqrt(3) * 5, triangle.getHeight(), 0.00001);
+    }
 }

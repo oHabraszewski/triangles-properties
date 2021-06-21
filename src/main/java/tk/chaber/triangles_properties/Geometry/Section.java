@@ -10,7 +10,7 @@ public class Section {
     public Section(Point pointA, Point pointB){
         this.A = pointA;
         this.B = pointB;
-        this.calcLength();
+        this.length = calcLength();
     }
 
     public Section(Point pointA, Angle angle, double length){
@@ -34,7 +34,7 @@ public class Section {
         double  a = Math.abs(getA().getX() - getB().getX()),
                 b = Math.abs(getA().getY() - getB().getY());
 
-        return this.length = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
     }
 
     public Point getA() {

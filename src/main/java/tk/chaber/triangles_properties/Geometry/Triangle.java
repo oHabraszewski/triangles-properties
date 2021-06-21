@@ -11,8 +11,7 @@ public class Triangle {
                     gamma;
     private TITOA titoa;
     private TITOS titos;
-
-
+    private double height;
 
     public Triangle(Section c, Angle alpha, Angle beta){
         Point   A = c.getA(),
@@ -38,8 +37,8 @@ public class Triangle {
 
         this.titos = checkTitos();
         this.titoa = checkTitoa();
-        System.out.println(titos);
-        System.out.println(titoa);
+
+        this.height = calcHeight();
     }
     private TITOS checkTitos(){
         if(Value.round(this.a.getLength()) == Value.round(this.b.getLength()) && Value.round(this.b.getLength()) == Value.round(this.c.getLength())){
@@ -67,6 +66,21 @@ public class Triangle {
         return TITOA.ACUTE;
     }
 
+    private double calcHeight(){
+        Section base = this.c;
+        Point takenFrom = this.b.getB();
+        Angle angleToBase = new Angle(90);
+
+        Straight heightsStraight = new Straight(takenFrom, angleToBase);
+        Straight basesStraight = new Straight(base.getA(), base.getB());
+
+        Point heightPointOnBase = heightsStraight.findCrossPoint(basesStraight);
+
+        Section height = new Section(takenFrom, heightPointOnBase);
+
+        return height.getLength();
+    }
+
     public Section getA() {
         return a;
     }
@@ -85,5 +99,9 @@ public class Triangle {
 
     public String getTitos() {
         return titos.toString().substring(0, 1) + titos.toString().toLowerCase().substring(1);
+    }
+
+    public double getHeight() {
+        return height;
     }
 }
