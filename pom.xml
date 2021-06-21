@@ -6,7 +6,7 @@
 
     <groupId>tk.chaber</groupId>
     <artifactId>triangles_properties</artifactId>
-    <version>0.1-DEV</version>
+    <version>0.1-RC1</version>
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
