@@ -37,7 +37,7 @@ public class Straight {
         return slope * x + intercept;
     }
 
-    public Point findIntersection(Straight straight2){
+    public Point findCrossPoint(Straight straight2){
         double  m1 = this.getSlope(),
                 m2 = straight2.getSlope();
 

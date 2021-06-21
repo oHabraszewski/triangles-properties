@@ -6,6 +6,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AngleTests{
     @Test
+    public void getDegreesFrom93() {
+        Angle angle = new Angle(93);
+        assertEquals(93, angle.getDegrees(), 0.00001);
+    }
+    @Test
     public void getRadiansFrom0() {
         Angle angle = new Angle(0);
         assertEquals(0, angle.getRadians(), 0.00001);
@@ -24,7 +29,7 @@ public class AngleTests{
     }
 
     @Test
-    public void testGetRadiansFromMinus180() {
+    public void getRadiansFromMinus180() {
         Angle angle = new Angle(-180);
         assertEquals(-Math.PI, angle.getRadians(), 0.00001);
     }

@@ -21,7 +21,7 @@ public class Triangle {
         Straight    bStraight = new Straight(A, alpha),
                     aStraight = new Straight(B, beta);
 
-        Point   C = bStraight.findIntersection(aStraight);
+        Point   C = bStraight.findCrossPoint(aStraight);
 
         Section b = new Section(A, C),
                 a = new Section(B, C);

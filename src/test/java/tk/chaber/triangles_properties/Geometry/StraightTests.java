@@ -29,17 +29,17 @@ public class StraightTests{
     }
 
     @Test
-    public void testFindIntersectionForM10B0(){
+    public void testFindCrossPointForM10B0(){
         Straight straight2 = new Straight(10, 0);
-        assertEquals(2.0, straight.findIntersection(straight2).getX(), 0.00001);
-        assertEquals(20.0, straight.findIntersection(straight2).getY(), 0.00001);
+        assertEquals(2.0, straight.findCrossPoint(straight2).getX(), 0.00001);
+        assertEquals(20.0, straight.findCrossPoint(straight2).getY(), 0.00001);
     }
 
     @Test
-    public void testFindIntersectionForMMinus20BMinus30(){
+    public void testFindCrossPointForMMinus20BMinus30(){
         Straight straight2 = new Straight(-20, -30);
-        assertEquals(-1.6, straight.findIntersection(straight2).getX(), 0.00001);
-        assertEquals(2.0, straight.findIntersection(straight2).getY(), 0.00001);
+        assertEquals(-1.6, straight.findCrossPoint(straight2).getX(), 0.00001);
+        assertEquals(2.0, straight.findCrossPoint(straight2).getY(), 0.00001);
     }
 
 
